@@ -1,0 +1,89 @@
+body {
+  background-color: #212534;
+}
+
+.topnav {
+  margin-bottom: 5%;
+}
+
+.topnav a {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 23px;
+  }
+
+  /*change the links on hover*/
+.topnav a:hover {
+    background-color: #2a2f45;
+    color: white;
+    border-radius: 12px;
+  }
+  
+/*footer*/
+footer {
+  color: white;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  left: 0%;
+  bottom: 0%;
+} 
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.first-row img{
+  height: 50%;
+  width: 50%;
+  margin-left: 48%;
+}
+
+.second-row img {
+  height: 50%;
+  width:50%;
+  margin-left: 2%;
+}
+
+.third-row img {
+  color: white;
+  margin-top: 2%;
+  margin-left: 43%;
+  font-size: 24px;
+  max-width: 55%;
+  max-height: 55%;
+}
+
+.first-row p {
+  color: white;
+  margin-left: 3%;
+  font-size: 24px;
+  margin-top: -25%;
+  margin-bottom: 15%;
+  margin-right: 55%;
+  text-align: center;
+}
+
+.second-row p {
+  color: white;
+  margin-left: 55%;
+  margin-right: 3%;
+  font-size: 24px;
+  margin-top: -22%;
+  margin-bottom: 20%;
+  text-align: center;
+}
+
+.third-row p {
+  color: white;
+  margin-left: 3%;
+  font-size: 24px;
+  margin-top: -26%;
+  margin-bottom: 10%;
+  margin-right: 58%;
+  text-align: center;
+}

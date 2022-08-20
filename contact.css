@@ -1,0 +1,163 @@
+.topnav a {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 23px;
+  }
+
+  /*change the links on hover*/
+.topnav a:hover {
+    background-color: #2a2f45;
+    color: white;
+    border-radius: 12px;
+  }
+
+  @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+  
+  
+  body {
+    background: #212534;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  
+  .card {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+    margin-right: 60%;
+    margin-top: 7%;
+  }
+  
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
+img {
+  width: 315px;
+  height: 470px;
+  margin-right: 60%;
+  margin-top: -471px;
+  z-index: 1;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  flex-wrap: wrap;
+  z-index: 2;
+  margin-right: -20%;
+  margin-top: -25%;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1em;
+}
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 6px rgba(255, 254, 254, 0.1);
+  color: white;
+}
+
+.github {
+  background: black;
+}
+.instagram {
+  background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.twitter {
+  background: #1da1f2;
+}
+.linkedin {
+  background: #0072b1;
+}
+
+.buttons-container a{
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 20px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 6%;
+  margin-top: 5%;
+  margin-right: -20%;
+  border-radius: 5%;
+  text-decoration: none;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+/*footer*/
+footer {
+  color: white;
+  text-align: center;
+  padding: 30px;
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+} 
