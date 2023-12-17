@@ -186,9 +186,9 @@ body {
 
 #progress {
   float: left;
-  width: 62%;
+  width: 73%;
   height: 20px;
-  background: #FF5D50;
+  background: #ff1100;
   z-index: 333;
 }
 
